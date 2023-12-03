@@ -5,7 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 7f;
 
     private Transform target;
     //array for waypoints
