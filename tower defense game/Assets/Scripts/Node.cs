@@ -6,11 +6,23 @@ public class Node : MonoBehaviour
 {
     private GameObject cannon;
 
+    BuildManager buildManager;
+
+
+    public void Start()
+    {
+        buildManager = BuildManager.instance;
+    }
 
     public void OnMouseDown()
     {
+        if (buildManager.GetCannonToBuild() == null)
+        
+            return;
+        
+
         if (cannon != null)
-        { 
+        {
             return;
         }
 

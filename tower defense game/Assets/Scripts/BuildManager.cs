@@ -12,15 +12,12 @@ public class BuildManager : MonoBehaviour
         if (instance != null)
         {
             return;
-        }   
-         instance = this;
+        }
+        instance = this;
     }
     public GameObject standardCannonPrefab;
+    public GameObject betterCannonPrefab;
 
-    void Start()
-    {
-        cannonToBuild = standardCannonPrefab;
-    }
 
     private GameObject cannonToBuild;
 
@@ -29,5 +26,9 @@ public class BuildManager : MonoBehaviour
         return cannonToBuild;
     }
 
+    public void SetCannonToBuild(GameObject cannon)
+    {
+        cannonToBuild = cannon;
+    }
 
 }
