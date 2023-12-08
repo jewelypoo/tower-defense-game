@@ -16,7 +16,7 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
     public GameObject standardCannonPrefab;
-    public GameObject betterCannonPrefab;
+    public GameObject longCannonPrefab;
 
 
     private GameObject cannonToBuild;

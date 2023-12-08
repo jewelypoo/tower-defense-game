@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 5470606258281812001}
   - component: {fileID: 2079775592521555397}
   m_Layer: 0
-  m_Name: Cannon
+  m_Name: Faster Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -154,11 +154,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 6
+  range: 5
   enemyTag: Enemy
   partToRotate: {fileID: 2941503994173070054}
   turnSpeed: 10
-  fireRate: 1
+  fireRate: 2
   bulletPrefab: {fileID: 2398895056742125461, guid: fbf470962aef42d4297e1c3a2c9ae8f2, type: 3}
   firePoint: {fileID: 8123178163661061016}
 --- !u!1 &4135893355164976075

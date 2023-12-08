@@ -16,9 +16,9 @@ public class Shop : MonoBehaviour
         buildManager.SetCannonToBuild(buildManager.standardCannonPrefab);
     }
 
-    public void purchaseBetterCannon()
+    public void purchaseLongCannon()
     {
-        buildManager.SetCannonToBuild(buildManager.betterCannonPrefab);
+        buildManager.SetCannonToBuild(buildManager.longCannonPrefab);
     }
 
 
