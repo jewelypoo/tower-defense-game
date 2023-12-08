@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBlueprint standardCannon;
+    public TurretBlueprint longCannon;
+    
     BuildManager buildManager;
 
     public void Start()
