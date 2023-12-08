@@ -15,7 +15,7 @@ public class Node : MonoBehaviour
         }
 
         GameObject cannonToBuild = BuildManager.instance.GetCannonToBuild();
-        cannon = (GameObject)Instantiate(cannonToBuild, transform.position, transform.rotation);
+        cannon = Instantiate(cannonToBuild, transform.position, transform.rotation);
 
     }
 

@@ -17,14 +17,14 @@ public class BuildManager : MonoBehaviour
     }
     public GameObject standardCannonPrefab;
 
-    public void Start()
+    void Start()
     {
         cannonToBuild = standardCannonPrefab;
     }
 
     private GameObject cannonToBuild;
 
-    public GameObject GetTurretToBuild()
+    public GameObject GetCannonToBuild()
     {
         return cannonToBuild;
     }
