@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private GameObject cannon;
+
+
+    public void OnMouseDown()
     {
-        
+        if (cannon != null)
+        { 
+            return;
+        }
+
+        GameObject cannonToBuild = BuildManager.instance.GetCannonToBuild();
+        cannon = (GameObject)Instantiate(cannonToBuild, transform.position, transform.rotation);
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }
