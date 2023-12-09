@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
+
+/*
+ * Author: [Fain, Jewel / Gibson, Hannah]
+ * Last Updated: [12/8/2023]
+ * [determines health/speed/and value for enemies as well as if they can die and their movement]
+ */
+
+
 public class Enemy : MonoBehaviour
 {
     public float speed = 7f;

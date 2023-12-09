@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/*
+ * Author: [Fain, Jewel / Gibson, Hannah]
+ * Last Updated: [12/8/2023]
+ * [checks if the player can build and which cannon/checks if player has enough money for cannon]
+ */
 public class BuildManager : MonoBehaviour
 {
 
