@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2079775592521555397, guid: 27f653950a8b77d4ea15c2d8beb12604, type: 3}
       propertyPath: range
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2079775592521555397, guid: 27f653950a8b77d4ea15c2d8beb12604, type: 3}
       propertyPath: fireRate
-      value: 0.5
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2083268030921004147, guid: 27f653950a8b77d4ea15c2d8beb12604, type: 3}
       propertyPath: m_Name
