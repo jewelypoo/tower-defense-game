@@ -33,11 +33,20 @@ public class Enemy : MonoBehaviour
         //when the enemy reaches the last point, it's destroyed
         if (wayPointIndex >= WayPoints.wayPoints.Length - 1)
         {
-            Destroy(gameObject);
+            EndPath();
             return;
         }
         wayPointIndex++;
         target = WayPoints.wayPoints[wayPointIndex];
     }
+
+    public void EndPath()
+    {
+        PlayerStats.lives--;
+        Destroy(gameObject);
+
+    }
+
+
 
 }

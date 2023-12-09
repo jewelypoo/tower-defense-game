@@ -25,6 +25,8 @@ public class BuildManager : MonoBehaviour
 
     //public bool (property) that checks if nodes are able to be built on
     public bool CanBuild { get { return cannonToBuild != null; } }
+    //checks if player has enough money
+    //public bool HasMoney { get { return PlayerStats.Money >= cannonToBuild.cost; } }
 
     public void SelectCannonToBuild(TurretBlueprint cannon)
     {
@@ -47,7 +49,7 @@ public class BuildManager : MonoBehaviour
         node.cannon = cannon;
 
         //displays new currency in log
-        Debug.Log("Cannon Built. Money Left: " + PlayerStats.Money); 
+        Debug.Log("Cannon Built. Money Left: " + PlayerStats.Money);
 
     }
 
