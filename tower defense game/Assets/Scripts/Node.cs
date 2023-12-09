@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    private GameObject cannon;
+    public GameObject cannon;
+    public Vector3 positionOffset;
+
 
     BuildManager buildManager;
 
@@ -14,9 +17,24 @@ public class Node : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
+
+    public void OnMouseEnter()
+    {
+        if (buildManager.CanBuild)
+            return;
+    }
+
+
+    public Vector3 GetBuildPosition()
+    {
+        return transform.position + positionOffset;
+
+    }
+    
+
     public void OnMouseDown()
     {
-        if (buildManager.GetCannonToBuild() == null)
+        if (!buildManager.CanBuild)
         
             return;
         
@@ -26,8 +44,8 @@ public class Node : MonoBehaviour
             return;
         }
 
-        GameObject cannonToBuild = BuildManager.instance.GetCannonToBuild();
-        cannon = (GameObject)Instantiate(cannonToBuild, transform.position, transform.rotation);
+        buildManager.BuildCannonOn(this);
+        
 
     }
 

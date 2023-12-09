@@ -5648,6 +5648,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55060488288e484bad006b2aab6cbc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  standardCannon:
+    prefab: {fileID: 2083268030921004147, guid: 27f653950a8b77d4ea15c2d8beb12604, type: 3}
+    cost: 100
+  longCannon:
+    prefab: {fileID: 6327463091584916251, guid: 0a653bd08150965418db0b248aefd42a, type: 3}
+    cost: 100
 --- !u!1001 &895051774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13945,7 +13951,7 @@ PrefabInstance:
       objectReference: {fileID: 870025184}
     - target: {fileID: 8426451375688601264, guid: 9b9b9f615c3b4a94fabe1f726f205897, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: purchaseBetterCannon
+      value: selectLongCannon
       objectReference: {fileID: 0}
     - target: {fileID: 8426451375688601264, guid: 9b9b9f615c3b4a94fabe1f726f205897, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -14027,7 +14033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardCannonPrefab: {fileID: 2083268030921004147, guid: 27f653950a8b77d4ea15c2d8beb12604, type: 3}
-  betterCannonPrefab: {fileID: 0}
+  longCannonPrefab: {fileID: 0}
 --- !u!1001 &1945721903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15755,7 +15761,7 @@ PrefabInstance:
       objectReference: {fileID: 870025184}
     - target: {fileID: 8426451375688601264, guid: 9b9b9f615c3b4a94fabe1f726f205897, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: purchaseBasicCannon
+      value: selectBasicCannon
       objectReference: {fileID: 0}
     - target: {fileID: 8426451375688601264, guid: 9b9b9f615c3b4a94fabe1f726f205897, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

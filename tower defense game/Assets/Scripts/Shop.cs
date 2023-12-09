@@ -14,14 +14,14 @@ public class Shop : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
-    public void purchaseBasicCannon()
+    public void selectBasicCannon()
     {
-        buildManager.SetCannonToBuild(buildManager.standardCannonPrefab);
+        buildManager.SelectCannonToBuild(standardCannon);
     }
 
-    public void purchaseLongCannon()
+    public void selectLongCannon()
     {
-        buildManager.SetCannonToBuild(buildManager.longCannonPrefab);
+        buildManager.SelectCannonToBuild(longCannon);
     }
 
 
