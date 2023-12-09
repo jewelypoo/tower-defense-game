@@ -39,7 +39,10 @@ public class Enemy : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// allows enemy to take damage and die when health reaches 0
+    /// </summary>
+    /// <param name="amount"> the amount of damage taken</param>
     public void TakeDamage(int amount)
     {
         health -= amount;
@@ -48,6 +51,9 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+    /// <summary>
+    /// when enemy reaches 0 they are destroyed and drop money to player
+    /// </summary>
     public void Die()
     {
         PlayerStats.Money += moneyDropped;
@@ -68,6 +74,9 @@ public class Enemy : MonoBehaviour
         target = WayPoints.wayPoints[wayPointIndex];
     }
 
+    /// <summary>
+    /// if the enemy reaches the end takes one health from player lives and is destroyed
+    /// </summary>
     public void EndPath()
     {
         PlayerStats.lives--;

@@ -12,7 +12,9 @@ public class BuildManager : MonoBehaviour
 {
 
     public static BuildManager instance;
-
+    /// <summary>
+    /// to allow the scene to have the game objects availabel to the plaeyr if they are playing
+    /// </summary>
     public void Awake()
     {
         if (instance != null)
@@ -32,12 +34,19 @@ public class BuildManager : MonoBehaviour
     public bool CanBuild { get { return cannonToBuild != null; } }
     //checks if player has enough money
     //public bool HasMoney { get { return PlayerStats.Money >= cannonToBuild.cost; } }
-
+    /// <summary>
+    /// when you select a cannon you can place it in the scene 
+    /// </summary>
+    /// <param name="cannon"> refers to cannon in that script</param>
     public void SelectCannonToBuild(TurretBlueprint cannon)
     {
         cannonToBuild = cannon;
     }
-
+    /// <summary>
+    /// checks to see if the player has enough money to purchase a cannon 
+    /// if they do not they are met with a message saying they do not have enough money
+    /// </summary>
+    /// <param name="node"> refers to the node you can place on the map</param>
     public void BuildCannonOn(Node node)
     {
         //checks if player has enough money for the cannon

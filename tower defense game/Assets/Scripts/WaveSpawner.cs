@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+/*
+ * Author: [Fain, Jewel ; Gibson,Hannah]
+ * Last Updated: [12/08/2023]
+ * [Handles wave spawning of enemies]
+ */
 public class WaveSpawner : MonoBehaviour
 {
 
@@ -33,7 +37,10 @@ public class WaveSpawner : MonoBehaviour
          countdownText.text = string.Format("{0:00.00}", countdown);
     }
 
-
+    /// <summary>
+    /// spawns the enemies in different waves after a period of time
+    /// </summary>
+    /// <returns></returns>
     IEnumerator SpawnWave()
     {
         waveNumber++;
@@ -43,7 +50,9 @@ public class WaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
     }
-
+    /// <summary>
+    /// instantiates the enemy prefabs
+    /// </summary>
     public void SpawnEnemy()
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);

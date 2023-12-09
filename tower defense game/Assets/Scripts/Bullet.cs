@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-
+/*
+ * Author: [Fain, Jewel ; Gibson,Hannah]
+ * Last Updated: [12/08/2023]
+ * [Handles bullet mechanics]
+ */
 public class Bullet : MonoBehaviour
 {
 
@@ -40,6 +44,9 @@ public class Bullet : MonoBehaviour
         transform.Translate(dir.normalized * distanceOfBullet, Space.World);
     }
 
+    /// <summary>
+    /// handles hitting enemies and destroys bullet when it collides
+    /// </summary>
     void HitTarget()
     {
         Damage(target);
@@ -47,6 +54,10 @@ public class Bullet : MonoBehaviour
         Debug.Log("Hit something");
     }
 
+    /// <summary>
+    /// handles damage dealt
+    /// </summary>
+    /// <param name="enemy">enemy in other script</param>
     public void Damage(Transform enemy)
     {
         Enemy e = enemy.GetComponent<Enemy>();
