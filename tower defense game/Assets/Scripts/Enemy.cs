@@ -7,6 +7,10 @@ public class Enemy : MonoBehaviour
 {
     public float speed = 7f;
 
+    public int health = 3;
+
+    public int moneyDropped = 50;
+
     private Transform target;
     //array for waypoints
     private int wayPointIndex = 0;
@@ -25,6 +29,22 @@ public class Enemy : MonoBehaviour
         {
             ReachNextWayPoint();
         }
+    }
+
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if (health<=0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        PlayerStats.Money += moneyDropped;
+
+        Destroy(gameObject);
     }
 
     //the enemy moves to each respective waypoint

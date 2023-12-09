@@ -8,17 +8,21 @@ public class Bullet : MonoBehaviour
 
     private Transform target;
 
+
     public float speed = 70f;
+
+    public int damage = 1;
+
     public void Seek(Transform Target1)
     {
         target = Target1;
     }
-   
+
 
     // Update is called once per frame
     void Update()
     {
-        if ( target == null)
+        if (target == null)
         {
             Destroy(gameObject);
             return;
@@ -38,8 +42,22 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
-        Destroy(target.gameObject);
+        Damage(target);
         Destroy(gameObject);
         Debug.Log("Hit something");
     }
+
+    public void Damage(Transform enemy)
+    {
+        Enemy e = enemy.GetComponent<Enemy>();
+
+        if (e != null)
+        {
+            e.TakeDamage(damage);
+        }
+
+
+    }
+
+
 }
