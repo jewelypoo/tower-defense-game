@@ -13982,6 +13982,7 @@ GameObject:
   - component: {fileID: 1930968455}
   - component: {fileID: 1930968454}
   - component: {fileID: 1930968456}
+  - component: {fileID: 1930968457}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -14033,7 +14034,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardCannonPrefab: {fileID: 2083268030921004147, guid: 27f653950a8b77d4ea15c2d8beb12604, type: 3}
-  longCannonPrefab: {fileID: 0}
+  longCannonPrefab: {fileID: 6327463091584916251, guid: 0a653bd08150965418db0b248aefd42a, type: 3}
+--- !u!114 &1930968457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930968453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02859d9166938a40922f4d339b9f57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1945721903
 PrefabInstance:
   m_ObjectHideFlags: 0
