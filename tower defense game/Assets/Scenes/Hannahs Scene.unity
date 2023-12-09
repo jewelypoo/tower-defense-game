@@ -490,7 +490,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $100
+  m_text: '$200
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2061,7 +2063,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $100
+  m_text: '$100
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6021,7 +6025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardCannon:
     prefab: {fileID: 2083268030921004147, guid: 27f653950a8b77d4ea15c2d8beb12604, type: 3}
-    cost: 100
+    cost: 200
   longCannon:
     prefab: {fileID: 6327463091584916251, guid: 0a653bd08150965418db0b248aefd42a, type: 3}
     cost: 100
@@ -14865,7 +14869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02859d9166938a40922f4d339b9f57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 200
+  startMoney: 250
   startLives: 3
 --- !u!114 &1930968458
 MonoBehaviour:

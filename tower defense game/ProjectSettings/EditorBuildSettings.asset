@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 4e842c665d4744d468ba428a2d8d5656
+  - enabled: 1
     path: Assets/Scenes/Hannahs Scene.unity
     guid: 2455f7f9a603ef8408cc2cfbad0838f4
   - enabled: 1
